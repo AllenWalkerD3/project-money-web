@@ -36,4 +36,11 @@ export interface CreateTransactionDTO {
     category_id: number;
     account_id: number;
     book_id: number; // API might require this if account_id isn't it.
+    account_type_id: number;
+}
+
+export interface AccountType {
+    id: number;
+    name: string;
+    user_id?: number;
 }
